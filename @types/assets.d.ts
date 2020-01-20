@@ -1,0 +1,13 @@
+// example: import * as image from "./image.png";
+declare module "*.png";
+declare module "*.jpeg";
+declare module "*.jpg";
+declare module "*.gif";
+declare module "*.svg";
+declare module "*.ogg";
+declare module "*.mp3";
+declare module "*.wav";
+declare module "*.mpg";
+declare module "*.mpeg";
+declare module "*.mp4";
+declare module "*.webm";

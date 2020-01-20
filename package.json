@@ -1,0 +1,44 @@
+{
+  "name": "mv-core-limiter",
+  "version": "1.0.0",
+  "description": "RPG ツクール MV のコアスクリプトを圧縮してしまえ！なツール",
+  "main": "index.html",
+  "scripts": {
+    "start": "run-p watch serve",
+    "build": "rimraf ./dist && webpack",
+    "watch": "rimraf ./dist && webpack -w",
+    "serve": "browser-sync start --config ./bs-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katai5plate/mv-core-limiter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katai5plate/mv-core-limiter/issues"
+  },
+  "homepage": "https://github.com/katai5plate/mv-core-limiter#readme",
+  "dependencies": {
+    "concat": "^1.0.3",
+    "fs-extra": "^8.1.0",
+    "lz-string": "^1.4.4",
+    "minify": "^5.0.0",
+    "nw": "0.43.6-sdk",
+    "try-to-catch": "^2.0.1"
+  },
+  "devDependencies": {
+    "@types/lz-string": "^1.3.33",
+    "@types/node": "^13.1.8",
+    "css-loader": "^3.4.2",
+    "file-loader": "^5.0.2",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.0",
+    "style-loader": "^1.1.3",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}
